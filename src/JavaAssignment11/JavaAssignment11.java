@@ -5,7 +5,6 @@ import java.util.*;
 public class JavaAssignment11 {
     private static HashMap<Character,Integer> map=new HashMap<>();
     static void countChars(String input){
-
         for(char c : input.toCharArray())
         {
             map.put(c,map.getOrDefault(c,0)+1);
@@ -19,7 +18,7 @@ public class JavaAssignment11 {
         }
         writer.close();
     }
-    public static void main(String[] args)throws IOException {
+    public static void main(String[] args) throws IOException {
         BufferedReader br =new BufferedReader(new FileReader(args[0]));
         String read=br.readLine();
         while(read!=null){
