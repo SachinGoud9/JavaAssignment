@@ -1,6 +1,6 @@
 package SachinGoud.assignment.data;
 
-public class IntChar {
+public class InstanceLocalVariablesDisplay {
 	int intanceIntegerVariable;
 	char instanceCharacterVariable;
 	
@@ -12,9 +12,9 @@ public class IntChar {
 	
 	//Function to display uninitialized Local variables.
 	public void displayLocalVariables() {
-		int localInt;
-		char localChar;
-		System.out.println("Value of unintialised Local Integer variable: "+intanceIntegerVariable);
-		System.out.println("Value of unintialised Local Character variable: "+instanceCharacterVariable);
+		int localIntegerVariable;
+		char localCharacterVariable;
+		System.out.println("Value of unintialised Local Integer variable: "+localIntegerVariable);
+		System.out.println("Value of unintialised Local Character variable: "+localCharacterVariable);
 	}
 }
