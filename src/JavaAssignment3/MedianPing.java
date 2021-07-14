@@ -6,9 +6,9 @@ import java.io.*;
 public class MedianPing {
 	public void pingRequest(String ipAddress) throws UnknownHostException, IOException{
 		long presentTime = System.currentTimeMillis();
-		InetAddress address = InetAddress.getByName(ipAddress);
+		InetAddress inetAddress = InetAddress.getByName(ipAddress);
 		System.out.println("Sending Ping Request to "+ ipAddress);
-		if(address.isReachable(2000)) {
+		if(inetAddress.isReachable(2000)) {
 			System.out.println("Host is Reachable.");
 		}
 		else {
@@ -18,9 +18,9 @@ public class MedianPing {
 		System.out.println("Time taken to ping the host: "+ ipAddress + " is " + presentTime + " milliseconds.");
 	}
 	public static void main(String args[]) throws UnknownHostException, IOException{
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		String ipAddress = br.readLine();
-		MedianPing mp = new MedianPing();
-		mp.pingRequest(ipAddress);
+		BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+		String ipAddress = bufferedReader.readLine();
+		MedianPing medianPing = new MedianPing();
+		medianPing.pingRequest(ipAddress);
 	}
 }
