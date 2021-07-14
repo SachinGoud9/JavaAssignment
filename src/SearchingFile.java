@@ -31,12 +31,12 @@ public class SearchingFile {
 	
 	public static void main(String[] args) throws IOException{
 		//BufferedReader to take input
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 		SearchingFile fileSearch = new SearchingFile();
 		System.out.println("Type \"exit\" to stop giving input for Searching Files.");
 		//Input fileName
 		while(true) {
-			String inputFile = br.readLine();
+			String inputFile = bufferedReader.readLine();
 			if(inputFile == "exit") {
 				break;
 			}
