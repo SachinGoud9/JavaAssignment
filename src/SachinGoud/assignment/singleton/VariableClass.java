@@ -11,7 +11,7 @@ public class VariableClass {
 		//return this;		
 	//}
 	//Function to print the String.
-	public VariableClass display() {
+	public VariableClass displayStringVariable() {
 		System.out.println(variableString);
 		return this;
 	}
