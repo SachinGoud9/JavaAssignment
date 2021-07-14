@@ -6,9 +6,9 @@ import SachinGoud.assignment.singleton.*;
 public class MainClass {
 	public static void main(String args[]) {
 		//First Task
-		IntChar ic = new IntChar();
-		ic.displayInstanceVariables();
-		ic.displayLocalVariables();
+		InstanceLocalVariablesDisplay instanceLocalVariablesDisplay = new InstanceLocalVariablesDisplay();
+		instanceLocalVariablesDisplay.displayInstanceVariables();
+		instanceLocalVariablesDisplay.displayLocalVariables();
 		
 		//Second Task
 		//This throws an error as static methiod cannot refer to non static variable.
@@ -16,6 +16,6 @@ public class MainClass {
 		
 		
 		//VariableClass vc = VariableClass.initializeString("Sachin");
-		//vc.display();
+		//vc.displayStringVariable();
 	}
 }
