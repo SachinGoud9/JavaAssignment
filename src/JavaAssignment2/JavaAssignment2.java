@@ -5,10 +5,10 @@ import java.util.regex.*;
 
 public class JavaAssignment2 {
 	public static void main(String args[]) {
-		Scanner sc = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
 		String input = sc.nextLine();
-		String str = "([a-z]|[A-Z])";
-		Pattern pattern = Pattern.compile(str);
+		String patternToBeSearched = "([a-z]|[A-Z])";
+		Pattern pattern = Pattern.compile(patternToBeSearched);
 		Matcher matcher = pattern.matcher(input);
 		if(matcher.find()) {
 			System.out.println("Input contains a-z.");
